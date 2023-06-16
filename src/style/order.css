@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Serif:ital,wght@1,600&family=Inter&family=Roboto:ital,wght@0,700;0,900;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.contentOrder{
+    font-family: "Roboto";
+    margin-left: 20%;
+}
+
+.titleOrder{
+    margin-left: 5%;
+    padding-top: 4.5%;
+    display: flex;
+    margin-bottom: 2%;
+    align-items: flex-end;
+}
+
+.titleOrder h1{
+    color: rgb(66, 65, 65);
+    border-radius: 0.5vw;
+    font-size: 2.3vw;
+    font-weight: 800;
+    box-sizing: border-box;
+}
+
+.titleOrder h4{
+    font-size: 1vw;
+    margin-left: 0.5%;
+    margin-bottom: 0.3%;
+    color: rgb(156, 156, 156);
+}
+
+.orderList{
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-right: 4.5%;
+}
+
+.addOrder{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addOrder ~ .addOrder{
+    margin-top: 3%;
+}
+
+.addOrder h3{
+    font-size: 1.3vw;
+    color: rgba(24, 27, 33, 0.9);
+    font-weight: 700;
+}
+
+.buttonAdd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 2% 5%;
+    background: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.buttonAdd h4{
+    margin-left: 1vw;
+    font-size: 1vw;
+    color: rgb(84, 84, 84);
+}
+
+.buttonLaunch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 1.2% 2.4%;
+    background: #d63031;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 4.5%;
+}
+
+.buttonLaunch h4{
+    margin-left: 1vw;
+    font-size: 1vw;
+    color: white;
+}
+
+.logoAdd{
+    font-size: 1.3vw;
+    color: rgb(84, 84, 84);
+}
+
+.logoLaunch{
+    font-size: 1.3vw;
+    color: white;
+}
+
+.buttonAction{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width:1200px){
+    .contentOrder{
+        margin-left: 0%;
+        margin-top: 8vh;
+    }
+
+    .titleOrder{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .titleOrder h1{
+        font-size: 3vw;
+    }
+
+    .titleOrder h4{
+        font-size: 1.5vw;
+        margin-left: 0;
+        margin-top: 1%;
+    }
+
+    .buttonLaunch{
+        margin: 0 auto;
+        margin-top: 3%;
+        padding: 1.5% 4%;
+    }
+
+    .buttonLaunch h4{
+        margin-left: 1vw;
+    }
+
+    .addOrder{
+        margin-top: 7%;
+        flex-direction: column;
+    }
+
+    .addOrder h3{
+        font-size: 2.5vw;
+    }
+
+    .buttonAdd{
+        margin: 0 auto;
+        margin-top: 3%;
+        width: 40%;
+        padding: 2.5% 0%;
+    }
+
+    .buttonAdd h4{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width:800px){
+    .contentOrder{
+        margin-left: 0%;
+        margin-top: 8vh;
+    }
+
+    .titleOrder{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .titleOrder h1{
+        font-size: 5vw;
+    }
+
+    .titleOrder h4{
+        font-size: 2.5vw;
+        margin-left: 0;
+        margin-top: 1%;
+    }
+
+    .buttonLaunch{
+        margin: 0 auto;
+        margin-top: 3%;
+        padding: 1.8% 4%;
+    }
+
+    .buttonLaunch h4{
+        font-size: 2.2vw;
+    }
+
+    .logoLaunch{
+        font-size: 2vw;
+    }
+
+    .addOrder{
+        margin-top: 13%;
+        flex-direction: column;
+    }
+
+    .addOrder h3{
+        font-size: 4vw;
+    }
+
+    .buttonAdd{
+        margin: 0 auto;
+        margin-top: 4%;
+        width: 60%;
+        padding: 3.5% 0%;
+    }
+
+    .buttonAdd h4{
+        font-size: 2.5vw;
+    }
+
+    .logoAdd{
+        font-size: 2.5vw;
+    }
+
+    .buttonLaunch h4{
+        margin-left: 1vw;
+        font-size: 3vw;
+    }
+
+    .logoLaunch{
+        font-size: 3vw;
+    }
+
+    .addOrder~.addOrder{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width:550px){
+    .contentOrder{
+        margin-left: 0%;
+        margin-top: 10vh;
+    }
+
+    .titleOrder h1{
+        font-size:  7vw;
+    }
+
+    .titleOrder h4{
+        font-size: 3.5vw;
+        margin-top: 1%;
+    }
+
+    .buttonLaunch{
+        margin: 0 auto;
+        margin-top: 4%;
+        padding: 3% 4.5%;
+    }
+
+    .logoLaunch{
+        font-size: 3.5vw;
+    }
+
+    .buttonLaunch h4{
+        margin-left: 1vw;
+        font-size: 3.5vw;
+    }
+
+    .addOrder{
+        margin-top: 15%;
+    }
+
+    .addOrder h3{
+        font-size: 5vw;
+    }
+
+    .buttonAdd{
+        margin: 0 auto;
+        margin-top: 4%;
+        width: 72%;
+        padding: 5% 0%;
+    }
+
+    .buttonAdd h4{
+        font-size: 3.5vw;
+    }
+
+    .logoAdd{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:400px){
+    .contentOrder{
+        margin-left: 0%;
+        margin-top: 9vh;
+    }
+
+    .titleOrder h1{
+        font-size:  7vw;
+    }
+
+    .titleOrder h4{
+        font-size: 3.5vw;
+    }
+
+    .buttonLaunch{
+        margin: 0 auto;
+        margin-top: 4%;
+        padding: 3.5% 7%;
+    }
+
+    .addOrder{
+        margin-top: 17%;
+    }
+
+    .logoLaunch{
+        font-size: 4.5vw;
+    }
+
+    .buttonLaunch h4{
+        margin-left: 2vw;
+        font-size: 4vw;
+    }
+
+    .addOrder h3{
+        font-size: 5.5vw;
+    }
+
+    .buttonAdd{
+        margin: 0 auto;
+        margin-top: 5%;
+        width: 90%;
+        padding: 5% 0%;
+    }
+
+    .buttonAdd h4{
+        font-size: 4vw;
+    }
+
+    .logoAdd{
+        font-size: 4vw;
+    }
+}

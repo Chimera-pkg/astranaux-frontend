@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Serif:ital,wght@1,600&family=Inter&family=Roboto:ital,wght@0,700;0,900;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: white ;
+    font-family: "Poppins";
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: absolute;
+    height: 100%;
+    position: fixed;
+    width: 20%;
+}
+
+.topBar{
+    width: 100%;
+}
+
+.titleBar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.titleBar img{
+    width: 65%;
+    margin-top: 10%;
+}
+
+.titleBar h1{
+    color: rgb(80, 80, 80);
+    text-align: center;
+    margin-top: 8%;
+    font-size: 2.3vw;
+    font-style: italic;
+}
+
+.menuList{
+    color: rgb(80, 80, 80);
+    width: 100%;
+    height: 50%;
+    margin-top: 20%;
+}
+
+.menuList ul li{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.menuList ul li a{
+    text-decoration: none;
+    width: 70%;
+    font-size: 1.2vw;
+    color: #40404051;
+    padding: 3% 0%;
+    font-weight: 600;
+}
+
+.ikonMenuInactive{
+    width: 30%;
+    font-size: 1.6vw;
+    color: #40404051;
+}
+
+.menuInactive{
+    text-decoration: none;
+    width: 70%;
+    font-size: 1.2vw;
+    color: #40404051;
+    padding: 3% 0%;
+    font-weight: 600;
+}
+
+.ikonMenuActive{
+    width: 30%;
+    font-size: 1.6vw;
+    color: #0c3c9c;
+}
+
+.menuActive{
+    text-decoration: none;
+    width: 70%;
+    font-size: 1.2vw;
+    color: #0c3c9c;
+    padding: 3% 0%;
+    font-weight: 600;
+}
+
+.profilInfo{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40%;
+}
+
+.profilInfo img{
+    width: 23%;
+}
+
+.nameInfo{
+    font-size: 1vw;
+    text-align: center;
+    color: #0c3c9c;
+    margin-top: 3%;
+}
+
+.emailInfo{
+    font-size: 0.8vw;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2%;
+    color: rgb(108, 108, 108);
+}
+
+.logoutSection{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoutSection button{
+    border: none;
+    background-color: #0c3c9c;
+    color: white;
+    padding: 3% 7%;
+    border-radius: 10px;
+    font-size: 1vw;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.barIcon{
+    display: none;
+}
+
+.dropMenuList{
+    display: none;
+}
+
+.dropNone{
+    display: none;
+}
+
+
+@media screen and (max-width:1200px){
+    .sidebar{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        height: 8.5vh;
+    }
+
+    .dropMenuList{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .profilInfoDrop{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2%;
+    }
+
+    .profilInfoDrop h1{
+        font-size: 1.5vw;
+        margin-top: 1%;
+        color: #0c3c9c;
+    }
+
+    .profilInfoDrop h3{
+        font-weight: 500;
+        font-size: 1.2vw;
+    }
+
+    .profilInfoDrop img{
+        width: 8%;
+    }
+
+    .menuDrop{
+        width: 100%;
+    }
+
+    .menuDrop ul li{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .menuDrop ul li a{
+        text-decoration: none;
+        color: #313131ad;
+        font-size: 2.5vw;
+    }
+
+    .menuDrop ul li h5{
+        padding: 3% 0;
+        font-weight: 600;
+    }
+
+    .logoutSectionDrop{
+        margin-top: 2%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+
+    .logoutSectionDrop button{
+        background-color: #0c3c9c;
+        color: white;
+        border: none;
+        width: 15%;
+        border-radius: 5px;
+        padding: 1% 0%;
+        font-size: 1.5vw;
+        font-weight: 600;
+    }
+
+    .barIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+    }
+
+    .hamburgerBar{
+        color: rgb(56, 56, 56);
+        font-size: 3vw;
+    }
+
+    .topBar{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titleBar{
+        width: 30%;
+        height: 100%;
+        margin-top: 0;
+    }
+    
+    .titleBar img{
+        width: 35%;
+        margin-top: 0;
+    }
+
+    .dropMenuList{
+        position: absolute;
+        margin-top: 8.5vh;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 999;
+    }
+
+    .menuList{
+        display: none;
+    }
+
+    .profilInfo{
+        display: none;
+    }
+
+    .logoutSection{
+        display: none;
+    }
+
+    .menuActiveDrop{
+        background-color: rgba(109, 109, 109, 0.123);
+    }
+}
+
+@media screen and (max-width:700px){
+    .barIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+    }
+
+    .hamburgerBar{
+        color: rgb(56, 56, 56);
+        font-size: 4.5vw;
+    }
+
+    .titleBar{
+        width: 40%;
+        height: 100%;
+        margin-top: 0;
+    }
+    
+    .titleBar img{
+        width: 45%;
+        margin-top: 0;
+    }
+
+    .profilInfoDrop h1{
+        font-size: 2vw;
+    }
+
+    .profilInfoDrop h3{
+        font-size: 1.8vw;
+    }
+
+    .menuDrop ul li a{
+        font-size: 3.5vw;
+    }
+
+    .logoutSectionDrop{
+        margin-top: 3%;
+    }
+
+    .logoutSectionDrop button{
+        font-size: 2vw;
+        width: 17%;
+        padding: 1.5% 0%;
+    }    
+    
+    .profilInfoDrop img{
+        width: 10%;
+    }
+
+    .menuDrop{
+        width: 100%;
+    }
+
+    .menuDrop ul li h5{
+        padding: 4% 0;
+    }
+
+    .profilInfoDrop{
+        margin-top: 3%;
+    }
+
+    .menuDrop ul li{
+        list-style-type: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:450px){
+    .barIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+    }
+
+    .hamburgerBar{
+        color: rgb(56, 56, 56);
+        font-size: 6vw;
+    }
+
+    .titleBar{
+        width: 40%;
+        height: 100%;
+        margin-top: 0;
+    }
+    
+    .titleBar img{
+        width: 65%;
+        margin-top: 0;
+    }
+
+    .profilInfoDrop h1{
+        font-size: 2.8vw;
+    }
+
+    .profilInfoDrop h3{
+        font-size: 2vw;
+    }
+
+    .menuDrop ul li a{
+        font-size: 4.5vw;
+    }
+
+    .logoutSectionDrop{
+        margin-top: 3%;
+    }
+
+    .logoutSectionDrop button{
+        font-size: 2.5vw;
+        width: 20%;
+        padding: 1.5% 0%;
+    }    
+    
+    .profilInfoDrop img{
+        width: 13%;
+    }
+
+    .menuDrop{
+        width: 100%;
+    }
+
+    .menuDrop ul li h5{
+        padding: 5% 0;
+    }
+
+    .profilInfoDrop{
+        margin-top: 5%;
+    }
+
+    .menuDrop ul li{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .logoutSectionDrop{
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (max-width:350px){
+    .profilInfoDrop h1{
+        font-size: 4vw;
+    }
+
+    .profilInfoDrop h3{
+        font-size: 3vw;
+    }
+
+    .menuDrop ul li a{
+        font-size: 6vw;
+    }
+
+    .logoutSectionDrop{
+        margin-top: 3%;
+    }
+
+    .logoutSectionDrop button{
+        font-size: 3.5vw;
+        width: 25%;
+        padding: 1.5% 0%;
+    }    
+    
+    .profilInfoDrop img{
+        width: 17%;
+    }
+
+    .menuDrop{
+        width: 100%;
+    }
+
+    .menuDrop ul li h5{
+        padding: 5% 0;
+    }
+
+    .profilInfoDrop{
+        margin-top: 6%;
+    }
+
+    .menuDrop ul li{
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .logoutSectionDrop{
+        margin-bottom: 5%;
+    }
+}

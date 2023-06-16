@@ -1,0 +1,578 @@
+.statusConn{
+    margin-left: 5%;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    padding: 1% 0.5%;
+    border-radius: 10px;
+}
+
+.boxStatus{
+    width: 30%;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boxStatus h3{
+    font-size: 1vw;
+    /* font-weight: 700; */
+    color: rgba(54, 54, 54, 0.847);
+}
+
+.boxStatusCircle{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boxStatusCircle h3{
+    font-size: 1vw;
+    /* font-weight: 700; */
+    color: rgba(54, 54, 54, 0.847);
+}
+
+.boxInternetActive{
+    width: 4vh;
+    height: 4vh;
+    background-color: rgb(34, 180, 21);
+    margin-top: 10%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.boxInternetInactive{
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    background-color: rgb(200, 26, 26);
+    margin-top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.box{
+    width: 90%;
+    height: 4vh;
+    background-color: #1751c5;
+    margin-top: 10%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.box-bar{
+    width: 30%;
+    height: 4vh;
+    margin-top: 8%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.bar-1-inactive{
+    height: 25%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.bar-2-inactive{
+    height: 50%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.bar-3-inactive{
+    height: 75%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.bar-4-inactive{justify-content: space-between;
+    height: 100%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.bar-1-active-only{
+    height: 25%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: rgb(196, 20, 20);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bar-2-active-two{
+    height: 50%;
+    width: 20%;justify-content: space-between;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: rgb(230, 104, 75);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bar-1-active-two{
+    height: 25%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: rgb(230, 104, 75);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+
+.bar-1-active-three{
+    height: 25%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: rgb(241, 208, 18);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bar-2-active-three{
+    height: 50%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: rgb(248, 230, 38);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bar-3-active-three{
+    height: 75%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: rgb(248, 230, 38);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+.bar-1-active-four{
+    height: 25%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: rgb(18, 175, 23);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bar-2-active-four{
+    height: 50%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: rgb(18, 175, 23);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bar-3-active-four{
+    height: 75%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: rgb(18, 175, 23);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.bar-4-active-four{
+    height: 100%;
+    width: 20%;
+    border-radius: 3px;
+    margin-top: auto;
+    background-color: rgb(18, 175, 23);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+.box h4{
+    font-size: 1.1vw;
+    /* font-weight: 600; */
+}
+
+.refresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    width: 60%;
+}
+  
+.arrow {
+    width: 60%;
+    transform-origin: center center;
+    animation: rotate 2s ease-in-out infinite;
+}
+
+.arrowOff {
+    width: 60%;
+    transform-origin: center center;
+    /* animation: rotate 2s ease-in-out infinite; */
+}
+
+.boxPosition{
+    width: 100%;
+    height: 4.2vh;
+    background-color: #1751c5;
+    margin-top: 10%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1vw;
+}
+
+.statusConn{
+    /* background-color: red; */
+}
+
+.topStatus{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botSection{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botStatus{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.speedStatus{
+    width: 35%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.boxStatusSpeed{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boxStatusSpeed h3{
+    font-size: 1vw;
+    color: rgba(54, 54, 54, 0.847);
+}
+
+.boxPositionSpeed{
+    width: 70%;
+    height: 4.2vh;
+    /* background-color: #1751c5; */
+    margin-top: 10%;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(53, 53, 53, 0.658);
+    font-size: 1vw;
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+@media screen and (max-width:1200px){
+    .botSection{
+        flex-direction: column;
+    }
+
+    .botStatus{
+        width: 90%;
+    }
+
+    .speedStatus{
+        width: 90%;
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 4%;
+    }
+
+    .boxPositionSpeed{
+        margin-top: 4%;
+    }
+
+    .statusConn{
+        margin-top: 3%;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .boxStatus{
+        width: 33%;
+    }
+
+    .boxStatus h3{
+        font-size: 1.8vw;
+    }
+
+    .boxStatusSpeed{
+        width: 40%;
+    }
+
+    .boxStatusSpeed h3{
+        font-size: 1.8vw;
+    }
+
+    .boxStatusSpeed h4{
+        font-size: 1.8vw;
+    }
+
+    .boxStatusCircle{
+        width: 33%;
+    }
+
+    .boxStatusCircle h3{
+        font-size: 1.8vw;
+    }
+
+    .refresh{
+        /* display: none; */
+    }
+
+    .box{
+        height: 5vh;
+    }
+
+    .boxPosition{
+        height: 5vh;
+    }
+
+    .box h4{
+        font-size: 1.7vw;
+    }
+
+    .boxPosition h4{
+        font-size: 1.7vw;
+    }
+
+    .boxInternetActive{
+        width: 5vh;
+        height: 5vh;
+    }
+    
+    .boxInternetInactive{
+        width: 5vh;
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width:800px){
+    .statusConn{
+        flex-direction: column;
+    }
+
+    .topStatus{
+        width: 100%;
+    }
+
+    .refresh{
+        margin-top: 2%;
+        width: 10%;
+        margin-bottom: 3%;
+    }
+
+    .botStatus{
+        width: 100%;
+    }
+
+    .boxStatus h3{
+        font-size: 2vw;
+    }
+
+    .botSection{
+        width: 100%;
+    }
+
+    .boxPosition{
+        width: 100%;
+    }
+
+    .boxStatusCircle{
+        margin-left: 0;
+    }
+
+    .speedStatus{
+        width: 100%;
+    }
+
+    .botStatusSpeed{
+        width: 100%;
+    }
+
+    .boxStatusSpeed h3{
+        font-size: 2vw;
+    }
+
+    .boxStatusCircle h3{
+        font-size: 2vw;
+    }
+
+    .box{
+        height: 4.5vh;
+    }
+
+    .box h4{
+        font-size: 2vw;
+    }
+
+    .boxPosition{
+        height: 4.5vh;
+    }
+
+    .boxPosition h4{
+        font-size: 2vw;
+    }
+
+    .boxInternetActive{
+        width: 4.5vh;
+        height: 4.5vh;
+    }
+    
+    .boxInternetInactive{
+        width: 4.5vh;
+        height: 4.5vh;
+    }
+
+    .statusConn{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .refresh{
+        width: 13%;
+    }
+
+    .statusConn{
+        margin-top: 5%;
+    }
+
+    .boxStatus h3{
+        font-size: 3vw;
+    }
+
+    .boxStatusSpeed h3{
+        font-size: 3vw;
+    }
+
+    .boxStatusSpeed h4{
+        font-size: 2.5vw;
+    }
+
+    .boxStatusCircle h3{
+        font-size: 3vw;
+    }
+
+    .box{
+        height: 4vh;
+    }
+
+    .box h4{
+        font-size: 2.5vw;
+    }
+
+    .boxPosition{
+        height: 4vh;
+    }
+
+    .boxPosition h4{
+        font-size: 2.5vw;
+    }
+
+    .boxInternetActive{
+        width: 4vh;
+        height: 4vh;
+    }
+    
+    .boxInternetInactive{
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .statusConn{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:350px){
+    .refresh{
+        width: 15%;
+    }
+
+    .statusConn{
+        margin-top: 5%;
+    }
+
+    .boxStatus h3{
+        font-size: 3.5vw;
+    }
+
+    .boxStatusCircle h3{
+        font-size: 3.5vw;
+    }
+
+    .box{
+        height: 3.7vh;
+    }
+
+    .box h4{
+        font-size: 2.5vw;
+    }
+
+    .boxInternetActive{
+        width: 3.5vh;
+        height: 3.5vh;
+    }
+    
+    .boxInternetInactive{
+        width: 3.5vh;
+        height: 3.5vh;
+    }
+
+    .statusConn{
+        width: 100%;
+    }
+}
+

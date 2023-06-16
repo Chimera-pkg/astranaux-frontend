@@ -1,0 +1,626 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.addManual{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+table{
+    width: 100%;
+}
+
+table select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2.5% 4%;
+    border-radius: 5px;
+    font-size: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border: none;
+    background-color: white;
+    outline: none;
+    text-indent: 5px;
+}
+
+table select{
+    margin-top: 2%;
+}
+
+table input[type=text]{
+    width: 100%;
+    padding: 2.5% 5.2%;
+    box-sizing: border-box;
+    font-size: 1vw;
+    margin-top: 2%;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+
+.buttonSection{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+table input[type=submit]{
+    color: white;
+    width: 35%;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    font-size: 1vw;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    background-color: #127a2c;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 1.5vw;
+    cursor: pointer;
+}
+
+.cancelButton{
+    width: 35%;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    font-size: 1vw;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+    background-color: rgb(204, 48, 48);
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 1.5vw;
+    cursor: pointer;
+    color: white;
+}
+
+.addQR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scanQR{
+    width: 60%;
+    height: fit-content;
+    margin-top: 4%;
+}
+
+.scanQRButton{
+    color: white;
+    width: 48%;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    background-color: #098624;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cameraWeb{
+    width: 100%;
+}
+
+.refreshCameraButton{
+    color: white;
+    width: 100%;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    font-size: 1.2vw;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    background-color: #170e64;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+.cameraButton{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabelAddManual tr td{
+    border-bottom: none;
+}
+
+.formConfirm{
+    width: 100%;
+}
+
+.formConfirm h3{
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 3%;
+}
+
+.tabelQR tr td{
+    border-bottom: none;
+}
+
+.titleQR{
+    text-align: left;
+}
+
+.split{
+    padding-right: 10px;
+}
+
+.tabelQR input[type=text]{
+    font-size: 0.8vw;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.buttonAddQR{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonAddQR button{
+    border: none;
+    font-size: 1vw;
+    padding: 2% 8%;
+    border-radius: 5px;
+    color: white;
+}
+
+.addConfirm{
+    background-color: #127a2c;
+    font-weight: 600;
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+.cancelConfirm{
+    font-weight: 600;
+    margin-left: 1%;
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.loaderCamera{
+    pointer-events: none;
+    width: 1vw;
+    height: 1vw;
+    font-weight: 500;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 0.25vw solid transparent;
+    border-top-color: white;
+    animation: an1 1s ease infinite;
+}
+
+.labelField{
+    text-align: left;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.textError{
+    font-size: 1vw;
+    text-align: center;
+    margin-bottom: 5%;
+    color: rgb(99, 4, 4);
+}
+
+@media screen and (max-width:1200px){
+    .labelField{
+        font-size: 1.5vw;
+    }
+
+    .mainContent-update h1{
+        font-size: 2.5vw;
+    }
+    
+    table select{
+        padding: 2.5% 4%;
+        font-size: 1.5vw;
+        text-indent: 5px;
+    }
+    
+    table select{
+        margin-top: 2%;
+    }
+    
+    table input[type=text]{
+        padding: 2.5% 5.2%;
+        font-size: 1.5vw;
+        margin-top: 2%;
+    }
+    
+    table input[type=submit]{
+        width: 35%;
+        padding: 2% 4%;
+        font-size: 1.5vw;
+    }
+    
+    .cancelButton{
+        width: 35%;
+        padding: 2% 4%;
+        font-size: 1.5vw;
+    }
+
+    .titleQR{
+        font-size: 1.6vw;
+    }
+    
+    .split{
+        font-size: 1.4vw;
+    }
+
+    .tabelQR input[type=text]{
+        font-size: 1.4vw;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .cameraButton h3{
+        font-size: 2vw;
+    }
+
+    .buttonAddQR button{
+        font-size: 1.7vw;
+    }
+}
+
+@media screen and (max-width:800px){
+    .labelField{
+        font-size: 2vw;
+    }
+
+    .mainContent-update h1{
+        font-size: 3.5vw;
+    }
+
+    table select{
+        padding: 3% 4%;
+        font-size: 2vw;
+        text-indent: 5px;
+    }
+    
+    table select{
+        margin-top: 1%;
+    }
+    
+    table input[type=text]{
+        padding: 3% 5.2%;
+        font-size: 2vw;
+        margin-top: 1%;
+    }
+    
+    table input[type=submit]{
+        width: 35%;
+        padding: 2% 4%;
+        font-size: 2vw;
+    }
+    
+    .cancelButton{
+        width: 35%;
+        padding: 2% 4%;
+        font-size: 2vw;
+    }
+
+    .titleQR{
+        font-size: 2vw;
+    }
+    
+    .split{
+        font-size: 1.8vw;
+    }
+
+    .tabelQR input[type=text]{
+        font-size: 1.8vw;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .cameraButton h3{
+        font-size: 2.5vw;
+    }
+
+    .buttonAddQR button{
+        font-size: 2vw;
+        padding: 3% 10%;
+    }
+
+    .scanQR{
+        width: 70%;
+    }
+
+    .cameraButton{
+        width: 70%;
+    }
+
+    .refreshCameraButton{
+        padding: 3% 4%;
+    }
+
+    .loaderCamera{
+        pointer-events: none;
+        width: 2vw;
+        height: 2vw;
+        font-weight: 500;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 0.35vw solid transparent;
+        border-top-color: white;
+        animation: an1 1s ease infinite;
+    }
+}
+
+@media screen and (max-width:600px){
+    .labelField{
+        font-size: 2.5vw;
+    }
+
+    table select{
+        padding: 3% 4%;
+        font-size: 2.5vw;
+        text-indent: 5px;
+    }
+    
+    table select{
+        margin-top: 1%;
+    }
+    
+    table input[type=text]{
+        padding: 3% 5.2%;
+        font-size: 2.5vw;
+        margin-top: 1%;
+    }
+    
+    table input[type=submit]{
+        width: 35%;
+        padding: 2% 4%;
+        font-size: 2.5vw;
+    }
+    
+    .cancelButton{
+        width: 35%;
+        padding: 2% 4%;
+        font-size: 2.5vw;
+    }
+
+    .titleQR{
+        font-size: 2.8vw;
+    }
+    
+    .split{
+        font-size: 2.2vw;
+    }
+
+    .tabelQR input[type=text]{
+        font-size: 2.5vw;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .cameraButton h3{
+        font-size: 3.5vw;
+    }
+
+    .buttonAddQR button{
+        font-size: 2.5vw;
+        padding: 3% 8%;
+    }
+
+    .titleQR{
+        font-size: 2.8vw;
+    }
+    
+    .split{
+        font-size: 2vw;
+    }
+
+    .tabelQR input[type=text]{
+        font-size: 2.2vw;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .cameraButton h3{
+        font-size: 3.5vw;
+        margin-bottom: 3%;
+    }
+
+    .buttonAddQR{
+        margin-top: 5%;
+    }
+
+    .buttonAddQR button{
+        font-size: 2.5vw;
+        padding: 3% 10%;
+    }
+
+    .scanQR{
+        width: 70%;
+    }
+
+    .cameraButton{
+        width: 70%;
+    }
+
+    .loaderCamera{
+        pointer-events: none;
+        width: 2.5vw;
+        height: 2.5vw;
+        font-weight: 500;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 0.45vw solid transparent;
+        border-top-color: white;
+        animation: an1 1s ease infinite;
+    }
+}
+
+@media screen and (max-width:500px){
+    .labelField{
+        font-size: 3vw;
+    }
+
+    .mainContent-update h1{
+        font-size: 4.5vw;
+    }
+
+    table select{
+        padding: 4% 4%;
+        font-size: 3vw;
+        text-indent: 5px;
+    }
+    
+    table select{
+        margin-top: 1%;
+    }
+    
+    table input[type=text]{
+        padding: 4% 5.2%;
+        font-size: 3vw;
+        margin-top: 1%;
+    }
+    
+    table input[type=submit]{
+        width: 35%;
+        padding: 3% 4%;
+        font-size: 2.5vw;
+    }
+    
+    .cancelButton{
+        width: 35%;
+        padding: 3% 4%;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:400px){
+    .labelField{
+        font-size: 3.3vw;
+    }
+
+    .mainContent-update h1{
+        font-size: 5vw;
+    }
+
+    table select{
+        padding: 4% 4%;
+        font-size: 3.5vw;
+        text-indent: 5px;
+    }
+    
+    table select{
+        margin-top: 1%;
+    }
+    
+    table input[type=text]{
+        padding: 4% 5.2%;
+        font-size: 3.5vw;
+        margin-top: 1%;
+    }
+    
+    table input[type=submit]{
+        width: 35%;
+        padding: 3% 4%;
+        font-size: 3.5vw;
+    }
+    
+    .cancelButton{
+        width: 35%;
+        padding: 3% 4%;
+        font-size: 3.5vw;
+    }
+
+    .titleQR{
+        font-size: 2.8vw;
+    }
+    
+    .split{
+        font-size: 2.2vw;
+    }
+
+    .tabelQR input[type=text]{
+        font-size: 2.5vw;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .cameraButton h3{
+        font-size: 3.5vw;
+    }
+
+    .buttonAddQR button{
+        font-size: 2.5vw;
+        padding: 3% 8%;
+    }
+
+    .titleQR{
+        font-size: 3.5vw;
+    }
+    
+    .split{
+        font-size: 2.5vw;
+    }
+
+    .tabelQR input[type=text]{
+        font-size: 2.8vw;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    .cameraButton h3{
+        font-size: 4vw;
+        margin-bottom: 3%;
+    }
+
+    .buttonAddQR{
+        margin-top: 7%;
+    }
+
+    .buttonAddQR button{
+        font-size: 3.5vw;
+        padding: 3% 10%;
+    }
+
+    .scanQR{
+        width: 80%;
+    }
+
+    .cameraButton{
+        width: 80%;
+    }
+
+    .loaderCamera{
+        pointer-events: none;
+        width: 3vw;
+        height: 3vw;
+        font-weight: 500;
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 0.65vw solid transparent;
+        border-top-color: white;
+        animation: an1 1s ease infinite;
+    }
+}

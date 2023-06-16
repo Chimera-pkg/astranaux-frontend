@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Serif:ital,wght@1,600&family=Inter&family=Roboto:ital,wght@0,700;0,900;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.waypointsContent{
+    font-family: "Roboto";
+    margin-left: 20%;
+}
+
+.titleWaypoints{
+    width: 90%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.titleWaypoints h1{
+    color: rgb(66, 65, 65);
+    border-radius: 0.5vw;
+    font-size: 2.3vw;
+    font-weight: 800;
+    box-sizing: border-box;
+}
+
+.titleWaypoints h4{
+    font-size: 1vw;
+    margin-left: 1%;
+    margin-bottom: 0.6%;
+    color: rgb(156, 156, 156);
+}
+
+.topWaypoints{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mapWaypoints{
+    width: 90%;
+    margin-left: 5%;
+    height: 40vh;
+    margin-top: 2%;
+}
+
+.mapView{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.mapWaypoints h3{
+    font-size: 1.2vw;
+    color: rgb(65, 65, 65);
+    font-weight: 800;
+    margin-bottom: 1%;
+}
+.buttonAdd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 1% 3%;
+    background: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.listData{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0%;
+}
+
+.listWaypoints table{
+    border-collapse: collapse;
+}
+
+.listWaypoints table tr td button{
+    border: none;
+}
+
+.actionButtonWay{
+    width: 20%;
+}
+
+.actionButtonWay button{
+    cursor: pointer;
+}
+
+.idWay{
+    width: 5%;
+}
+
+.nameWay{
+    width: 10%;
+}
+
+.codeWay{
+    width: 7%;
+}
+
+.latWay{
+    width: 20%;
+}
+
+.lonWay{
+    width: 20%;
+}
+
+.altWay{
+    width: 9%;
+}
+
+.statusWay{
+    width: 9%;
+}
+
+.activeStatus h5{
+    border-radius: 5px;
+    padding: 5% 0%;
+    color: rgb(16, 108, 13);
+    font-size: 0.85vw;
+}
+
+.inactiveStatus h5{
+    border-radius: 5px;
+    padding: 5% 0%;
+    color: #9c0c0c;
+    font-size: 0.85vw;
+}
+
+.buttonAddWay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 1% 3%;
+    background: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.buttonAddWay h4{
+    margin-left: 1vw;
+    font-size: 1vw;
+    color: rgb(84, 84, 84);
+}
+
+.logoAddWay{
+    font-size: 1.3vw;
+    color: rgb(84, 84, 84);
+}
+
+.enabledButton{
+    font-weight: 600;
+    margin-right: 2%;
+    color: white;
+    padding: 3% 0%;
+    width: 40%;
+    border-radius: 0.2vw;
+    font-size: 0.8vw;
+    background-color: #0c6d2c;
+}
+
+.editButtonWay{
+    background-color: #0c3c9c;
+    color: white;
+    font-weight: 600;
+    padding: 3% 5%;
+    border-radius: 0.2vw;
+    font-size: 0.8vw;
+}
+
+.deleteButtonWay{
+    font-weight: 600;
+    padding: 3% 0%;
+    width: 40%;
+    color: white;
+    border-radius: 0.2vw;
+    margin-right: 2%;
+    background-color: #9c0c0c;
+    font-size: 0.8vw;
+}
+
+.tabelMobileWaypoint{
+    display: none;
+}
+
+.tabelMobileWaypoint{
+    margin-bottom: 10%;
+}
+
+.dataRow .titleRow{
+    border-bottom:  1px solid #F6F5F8;
+}
+
+.listTitleWaypoint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listTitleWaypoint h3{
+    font-size: 1.3vw;
+    color: rgba(24, 27, 33, 0.9);
+    font-weight: 700;
+}
+
+.tabelDekstopWaypoint{
+    position: relative;
+}
+
+.listLoader{
+    border-top-color: rgba(0, 0, 0, 0.781);
+    width: 4vw;
+    height: 4vw;
+    font-weight: 800;
+    position: absolute;
+    margin-top: 2%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:1200px){
+    .listTitleWaypoint h3{
+        font-size: 2vw;
+    }
+
+    .tabelDekstopWaypoint tr td{
+        font-size: 1.3vw;
+    }
+
+    .tabelDekstopWaypoint tr th{
+        font-size: 1.3vw;
+    }
+
+    .activeStatus h5{
+        font-size: 1.3vw;
+    }
+
+    .inactiveStatus h5{
+        font-size: 1.3vw;
+    }
+
+    .actionButtonWay button{
+        font-size: 1.3vw;
+    }
+
+    .waypointsContent{
+        margin-left: 0%;
+        margin-top: 10vh;
+    }
+
+    .titleWaypoints{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .titleWaypoints h1{
+        font-size: 3vw;
+    }
+
+    .titleWaypoints h4{
+        font-size: 1.5vw;
+        margin-left: 0;
+        margin-top: 1%;
+    }
+
+    .buttonAddWay h4{
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (max-width:800px){
+    .listTitleWaypoint{
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .listTitleWaypoint h3{
+        font-size: 3.5vw;
+    }
+
+    .buttonAddWay{
+        margin-top: 0%;
+    }
+
+    .tabelMobileWaypoint{
+        display: block;
+    }
+
+    .titleRow{
+        font-size: 2vw;
+    }
+
+    .rowValue{
+        font-size: 2vw;
+    }
+
+.rowValueActive{
+        font-size: 3vw;
+        color: #0c6d2c;
+    }
+
+    .rowValueInactive{
+        font-size: 3vw;
+        color: #9c0c0c;
+    }
+
+    .dataRow{
+        margin-top: 3%;
+    }
+
+    .tabelDekstopWaypoint{
+        display: none;
+    }
+
+    .buttonAddWay{
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 2% 7%;
+    }
+
+    .buttonAddWay h4{
+        font-size: 2vw;
+    }
+
+    .logoAddWay{
+        font-size: 2vw;
+    }
+
+    .titleWaypoints h1{
+        font-size: 5vw;
+    }
+
+    .titleWaypoints h4{
+        font-size: 2.5vw;
+        margin-left: 0;
+        margin-top: 1%;
+    }
+
+    .tabelDekstopWaypoint tr td{
+        font-size: 1.3vw;
+    }
+    .tabelDekstopWaypoint tr th{
+        font-size: 1.3vw;
+    }
+
+    .mapWaypoints{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .listTitleWaypoint h3{
+        font-size: 4vw;
+    }
+
+    .listTitleWaypoint{
+        flex-direction: column;
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .listTitleWaypoint h3{
+        font-size: 4.2vw;
+    }
+
+    .buttonAddWay{
+        margin: 0 auto;
+        margin-top: 5%;
+        padding: 2.5% 7%;
+        margin-bottom: 7%;
+    }
+
+    .buttonAddWay h4{
+        font-size: 3vw;
+    }
+
+    .logoAddWay{
+        font-size: 3vw;
+    }
+
+    .listTitleWaypoint{
+        flex-direction: column;
+        margin-top: 9%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .listTitleWaypoint h3{
+        font-size: 4.7vw;
+    }
+
+    .contentDashboard{
+        margin-top: 10vh;
+    }
+
+    .titleWaypoints h1{
+        font-size: 7vw;
+    }
+
+    .titleWaypoints h4{
+        font-size: 3.5vw;
+        margin-left: 0;
+        margin-top: 1%;
+    }
+
+    .buttonAddWay{
+        margin: 0 auto;
+        margin-top: 7%;
+        padding: 2.5% 7%;
+        margin-bottom: 7%;
+    }
+
+    .buttonAddWay h4{
+        font-size: 3.5vw;
+    }
+
+    .logoAddWay{
+        font-size: 3.5vw;
+    }
+    
+    
+}
+
+@media screen and (max-width:400px){
+    .buttonAddWay{
+        margin: 0 auto;
+        margin-top: 7%;
+        padding: 3% 7%;
+    }
+
+    .buttonAddWay h4{
+        font-size: 4vw;
+    }
+
+    .logoAddWay{
+        font-size: 4vw;
+    }
+    
+}
+
+@media screen and (max-width:400px){
+    .listTitleWaypoint h3{
+        font-size: 5.2vw;
+    }
+}

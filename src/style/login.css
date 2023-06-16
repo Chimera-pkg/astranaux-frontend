@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Serif:ital,wght@1,600&family=Inter&family=Roboto:ital,wght@0,700;0,900;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.loginPage{
+    font-family: "Poppins";
+    background-image: url("../assets/background-login.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm{
+    width: 60%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: flex;
+}
+
+.leftForm{
+    width: 40%;
+    background: rgb(13, 51, 113);
+    background: linear-gradient(90deg, rgba(19,68,148,1) 13%, rgba(12,60,156,1) 62%, rgba(38,74,142,1) 100%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.leftForm h1{
+    color: white;
+    font-weight: 800;
+    font-size: 2.5vw;
+    text-align: center;
+    margin-top: 5%;
+    font-style: italic;
+}
+
+.leftForm img{
+    width: 80%;
+    margin-top: 3%;
+}
+
+.rightForm{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+}
+
+.rightForm img{
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.rightForm h3{
+    color: #414340;
+    font-size: 1.8vw;
+    font-weight: 500;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.rightForm p{
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 500;
+    margin-top: 1%;
+    color: #536162;
+}
+
+.formLogin{
+    width: 81%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 7%;
+}
+  
+.formInput~.formInput{
+    width: 100%;
+    margin-top: 7%;
+}
+  
+  .formInput input{
+    width: 100%;
+    outline: none;
+    border: 0.5px solid #D9D9D9;
+    padding: 5% 16% 4% 8%;
+    box-sizing: border-box;
+    font-size: 1vw;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s;
+  }
+  
+  .formInput span{
+    position: absolute;
+  }
+  
+  .inputName{
+    left: 0;
+    font-size: 0.9vw;
+    margin: 4% 16% 4% 8%;
+    font-weight: 500;
+    color: #B6B7BF;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .iconForm{
+    right: 0;
+    font-size: 1.3vw;
+    color: #B6B7BF;
+    padding: 3% 6% 4% 0%;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+
+  .iconFormPass{
+    right: 0;
+    font-size: 1.3vw;
+    color: #B6B7BF;
+    padding: 3% 6% 4% 0%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .formInput input:valid ~ .inputName,
+  .formInput input:focus ~ .inputName{
+    color: rgb(19,68,148);
+    transform: translateX(-5%) translateY(-130%);
+    font-size: 0.9vw;
+    padding: 0% 1%;
+    border-radius: 5px;
+    background: linear-gradient(to top, white 50%, white 50%);
+  }
+  
+  .formInput input:valid ,
+  .formInput input:focus{
+    border: 1px solid rgba(19, 68, 148, 0.564);;
+  }
+  
+  .formInput input:valid ~ .iconForm,
+  .formInput input:focus ~ .iconForm{
+    color: rgb(19,68,148);
+    transition: 0.5s;
+  }
+
+  .formInput input:valid ~ .iconFormPass,
+  .formInput input:focus ~ .iconFormPass{
+    color: rgb(19,68,148);
+    transition: 0.5s;
+  }
+  
+.buttonSubmit{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .subButLog{
+    margin-top: 3%;
+    width: 60%;
+    font-size: 1.2vw;
+    padding: 3% 0%;
+    border: none;
+    background-color: rgb(19,68,148);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+.errorMsg{
+  width: 100%;
+  height: 3vh;
+}
+
+.activeError{
+  color: rgb(196, 48, 48);
+  margin-top: 3%;
+  text-align: center;
+  font-size: 0.8vw;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.inactiveError{
+  color: rgb(196, 48, 48);
+  margin-top: 3%;
+  text-align: center;
+  font-size: 0.8vw;
+}
+
+.loaderLogin{
+  pointer-events: none;
+  width: 1vw;
+  height: 1vw;
+  font-weight: 500;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 0.25vw solid transparent;
+  border-top-color: white;
+  animation: an1 1s ease infinite;
+}
+
+.registerLink{
+  margin-top: 6%;
+  text-align: center;
+  font-size: 0.8vw;
+  margin-bottom: 4%;
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(32, 119, 195);
+}
+
+@keyframes an1 {
+  0%{
+    transform: rotate(0turn);
+  }
+  100%{
+    transform: rotate(1turn);
+  }
+}
+  
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {margin-top: 0%;
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media screen and (max-width:1200px){
+  .loaderLogin{
+    width: 1.5vw;
+    height: 1.5vw;
+  }
+
+  .leftForm{
+    visibility: hidden;
+    width: 0%;
+  }
+
+  .loginForm{
+    height: fit-content;
+  }
+
+  .rightForm{
+    width: 100%;
+  }
+
+  .inputName{
+    font-size: 1.2vw;
+  }
+
+  .iconForm{
+    font-size: 1.7vw;
+  }
+
+  .iconFormPass{
+    font-size: 1.7vw;
+  }
+
+  .rightForm h3{
+    font-size: 2.2vw;
+  }
+
+  .rightForm p{
+    font-size: 1.3vw;
+  }
+
+  .subButLog{
+    margin-top: 0%;
+  }
+
+  .subButLog{
+    font-size: 1.5vw;
+    margin-top: 3%;
+  }
+
+  .rightForm img{
+    width: 50%;
+  }
+
+  .formInput input{
+    font-size: 1.2vw;
+  }
+
+  .formInput input:valid ~ .inputName,
+  .formInput input:focus ~ .inputName{
+    transform: translateX(-5%) translateY(-150%);
+    font-size: 1.3vw;
+  }
+
+  .formInput ~ .formInput{
+    margin-top: 3%;
+  }
+
+  .activeError{
+    font-size: 1.2vw;
+  }
+
+  .inactiveError{
+    font-size: 1.2vw;
+  }
+
+}
+
+@media screen and (max-width: 900px){
+  .formInput ~ .formInput{
+    margin-top: 4%;
+  }
+
+  .subButLog{
+    font-size: 1.7vw;
+  }
+
+  .formInput input:valid ~ .inputName,
+  .formInput input:focus ~ .inputName{
+    transform: translateX(-5%) translateY(-130%);
+    font-size: 1.5vw;
+  }
+
+  .iconForm{
+    font-size: 1.5vw;
+  }
+
+  .formInput input{
+    font-size: 1.4vw;
+  }
+
+  .iconForm{
+    font-size: 1.9vw;
+  }
+
+  .iconFormPass{
+    font-size: 1.9vw;
+  }
+
+  .rightForm h3{
+    font-size: 3.3vw;
+  }
+
+  .rightForm p{
+    font-size: 1.6vw;
+  }
+
+  .rightForm{
+    height: fit-content;
+  }
+
+  .loginForm{
+    height: fit-content;
+  }
+
+  .registerLink{
+    padding-bottom: 5%;
+  }
+
+  .inputName{
+    margin-top: 4%;
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .loaderLogin{
+    width: 2.2vw;
+    height: 2.2vw;
+  }
+
+  .inputName{
+    margin-top: 5%;
+  }
+
+  .loginForm{
+    height: 50vh;
+    width: 85%;
+  }
+
+  .rightForm h3{
+    font-size: 4vw;
+  }
+
+  .rightForm p{
+    font-size: 2.3vw;
+  }
+  
+  .formInput input{
+    font-size: 3vw;
+    padding: 5% 16% 4% 8%;
+  }
+
+  .inputName{
+    font-size: 2.3vw;
+  }
+
+  .iconForm{
+    font-size: 3.5vw;
+    padding: 4% 6% 4% 0%;
+  }
+
+  .iconFormPass{
+    padding: 4% 6% 4% 0%;
+    font-size: 3.5vw;
+  }
+
+  .formInput input:valid ~ .inputName,
+  .formInput input:focus ~ .inputName{
+    transform: translateX(-5%) translateY(-140%);
+    font-size: 2.2vw;
+  }
+  
+  .activeError{
+    font-size: 2vw;
+  }
+
+  .inactiveError{
+    font-size: 2vw;
+  }
+
+  .subButLog{
+    padding: 4% 0%;
+    font-size: 2.5vw;
+  }
+
+  .registerLink{
+    font-size: 2.2vw;
+  }
+
+  .rightForm{
+    height: fit-content;
+  }
+
+  .loginForm{
+    height: fit-content;
+  }
+}

@@ -1,0 +1,400 @@
+.currentMission{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.currentMission h3{
+    color: rgba(24, 27, 33, 0.9);
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+.currentMission table{
+    width: 95%;
+    margin-top: 1%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+ thead{
+    color: white;
+    font-size: 0.9vw;
+}
+
+table tr th{
+    background-color: #0c3c9c;
+}
+
+thead tr:first-child th:first-child { 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+thead tr:first-child th:last-child { 
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+
+thead tr th{
+    padding: 1% 0%;
+    text-align: center;
+}
+
+.currentTable table tr td{
+    padding: 1.5% 0%;
+    text-align: center;
+    border-bottom:  2px solid #F6F5F8;
+}
+/* 
+.currentTable{
+    display: none;
+} */
+
+.idListCurrent{
+    width: 7%;
+}
+
+.nameListCurrent{
+    width: 15%;
+}
+
+.taskProsesCurrent{
+    width: 12%;
+}
+
+.taskOnAir{
+    width: 12%;
+}
+
+.priorityCurrent{
+    width: 10%;
+}
+
+.packageCurr{
+    width: 10%;
+}
+
+.launchAt{
+    width: 21%;
+}
+
+.actionButtonCurrent{
+    width: 25%;
+}
+
+.idList{
+    width: 8%;
+}
+
+.packageList{
+    width: 17%;
+}
+
+.actionButton{
+    width: 35%;
+}
+
+.actionButton button{
+    font-size: 0.7vw;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+.taskProsesCurrent h5{
+    background-color: rgb(21, 22, 126);
+    width: 50%;
+    font-size: 0.8vw;
+    color: white;
+    padding: 5% 14%;
+    border-radius: 1vw;
+    margin: 0 auto;
+}
+
+.taskOnAir h5{
+    background-color: rgb(26, 177, 76);
+    width: 50%;
+    font-size: 0.8vw;
+    color: white;
+    padding: 5% 14%;
+    border-radius: 1vw;
+    margin: 0 auto;
+}
+
+.cancelTaskButtonCurrent{
+    padding: 6% 15%;
+    color: white;
+    margin-right: 1%;
+    border-radius: 0.5vw;
+    background-color: #9c0c0c;
+    border: none;
+    display: flex;
+    margin: 0 auto;
+}
+
+.cancelTaskButtonCurrent h6{
+    font-size: 0.7vw;
+}
+
+.iconX{
+    display: none;
+}
+
+.finishedButton{
+    color: white;
+    padding: 3% 5%;
+    margin-left: 1%;
+    border-radius: 0.5vw;
+    background-color: #0c6d2c;
+}
+
+.nameList{
+    width: 18%;
+}
+
+.priority{
+    width: 11%;
+}
+
+.disabledCancel{
+    padding: 3% 15%;
+    font-size: 0.7vw;
+    font-weight: 600;
+}
+
+.tabelMobile{
+    display: none;
+}
+
+
+.tabelDekstop{
+    position: relative;
+} 
+
+.titleRow{
+    background-color: #0c3c9c;
+    color: white;
+    width: 25%;
+    font-size: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.rowValue{
+    border-top:  2px solid #F6F5F8;
+}
+
+.cancelTaskMobile{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2vw;
+    padding: 2% 5%;
+}
+
+.dataRow table tr td{
+    padding: 1.5% 0%;
+}
+
+.prosesRow{
+    background-color: #0c3c9c;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    color: white;
+    padding: 2% 5%;
+}
+
+.airRow{
+    background-color: #0c6d2c;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    color: white;
+    padding: 2% 5%;
+}
+
+.tabelMobile{
+    margin-bottom: 10%;
+}
+
+.emptyTeks{
+    font-size: 2.5vw;
+    opacity: 0.5;
+    border-bottom: none;
+}
+
+.listLoader{
+    border-top-color: rgba(0, 0, 0, 0.781);
+    width: 4vw;
+    height: 4vw;
+    font-weight: 800;
+    position: absolute;
+    margin-top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:1200px){
+    .currentMission{
+        margin-top: 4%;
+    }
+
+    .currentMission h3{
+        font-size: 2vw;
+    }
+
+    .currentTable tr th{
+        font-size: 1.4vw;
+    }
+
+    .currentTable tr td{
+        font-size: 1.4vw;
+    }
+
+    .taskProsesCurrent h5{
+        font-size: 1.2vw;
+    }
+    
+    .iconX {
+        font-size: 1.4vw;
+        display: block;
+    }
+
+    .cancelTaskButtonCurrent h6{
+        display: none;
+    }
+
+    .emptyTeks h2{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width:800px){
+    .currentMission{
+        margin-top: 4%;
+    }
+
+    .currentMission h3{
+        font-size: 3vw;
+    }
+
+    .currentTable tr th{
+        font-size: 1.6vw;
+    }
+
+    .currentTable tr td{
+        font-size: 1.5vw;
+    }
+
+    .taskProsesCurrent h5{
+        font-size: 1.4vw;
+    }
+    .iconX {
+        font-size: 1.7vw;
+        display: block;
+    }
+
+    .cancelTaskButtonCurrent h6{
+        display: none;
+    }
+}
+
+@media screen and (max-width:700px){
+    .currentTable{
+        display: none;
+    }
+
+    .tabelMobile{
+        display: block;
+    }
+
+    .emptyTeks{
+        width: 100%;
+        font-size: 3vw;
+        margin-top: 2%;
+    }
+
+    .tabelMobile table tr td{
+        padding: 2% 0;
+        border-bottom:  1px solid #f6f5f87c;
+    }
+
+    .titleRow{
+        font-size: 2vw;
+        width: 35%;
+    }
+
+    .prosesRow{
+        font-size: 2.3vw;
+    }
+
+    .airRow{
+        font-size: 2.3vw;
+    }
+
+    .cancelTaskMobile{
+        padding: 3% 0%;
+        width: 35%;
+    }
+
+    .cancelTaskMobile h6{
+        font-size: 2.3vw;
+    }
+
+    .rowValue{
+        font-size: 2vw;
+    }
+
+    .currentMission h3{
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .currentMission h3{
+        font-size: 4.3vw;
+        margin-top: 7%;
+    }
+
+    .emptyTeks{
+        width: 100%;
+        font-size: 3.5vw;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .titleRow{
+        font-size: 2.5vw;
+        width: 40%;
+    }
+
+    .emptyTeks{
+        width: 100%;
+        font-size: 4vw;
+        margin-top: 2%;
+    }
+
+    .currentMission h3{
+        margin-top: 8%;
+    }
+
+    .cancelTaskMobile{
+        font-size: 3vw;
+        padding: 3% 0%;
+        width: 40%;
+        border-radius: 7px;
+    }
+
+    .rowValue{
+        font-size: 2.5vw;
+    }
+
+    .prosesRow{
+        font-size: 2.5vw;
+    }
+
+    .airRow{
+        font-size: 2.5vw;
+    }
+}
